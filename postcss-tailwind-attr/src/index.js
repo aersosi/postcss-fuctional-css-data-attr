@@ -23,7 +23,6 @@ module.exports = (opts = {
   // todo: 1. find only in data-attribute and compile to data-*
   // todo: 2. return tailwind if it's in regular class
   // todo: 3. add custom whiteList as option
-  // todo: 4. add custom data-attr as option
   return {
     postcssPlugin: 'postcss-tailwind-attr',
     Root(root) {
@@ -45,7 +44,7 @@ module.exports = (opts = {
             // classes = tw-classes -> create data-attr classes
             let nodot = i.replace(/\./g,'');
             if (findInArr(nodot, twClasses)) {
-              return `[${attrSelector}~="${nodot}"],.${nodot}`
+              return `[${attrSelector}~="${nodot}"], ${i}`
             }
             // classes = real classes -> use them as they are
             // if (isClassSelector(i)) {
