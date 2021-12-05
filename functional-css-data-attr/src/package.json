@@ -2,9 +2,10 @@
   "name": "postcss-src",
   "version": "0.0.0",
   "description": "PostCSS plugin test232323",
+  "main": "index.js",
   "keywords": ["postcss", "css", "postcss-plugin", "postcss-src"],
   "scripts": {
-    "test": "jest --coverage && eslint ."
+    "test": "../node_modules/.bin/jest --coverage && eslint ."
   },
   "author": "Arthur Ersosi <a.ersosi@gmx.de>",
   "license": "MIT",
@@ -13,14 +14,28 @@
     "node": ">=12.0.0"
   },
   "peerDependencies": {
-    "postcss": "^8.3.0"
+    "postcss": "^8.3.0",
+    "functional-css-data-attr": "file:functional-css-data-attr/src"
   },
   "devDependencies": {
     "clean-publish": "^3.4.2",
     "eslint": "^8.0.1",
     "eslint-plugin-jest": "^25.2.2",
     "jest": "^27.3.1",
-    "postcss": "^8.3.11"
+    "postcss": "^8.3.11",
+    "autoprefixer": "^10.2.6",
+    "cssnano": "^5.0.6",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.2.4",
+    "live-server": "^1.2.1",
+    "cross-env": "^5.2.0",
+    "concurrently": "^4.1.0",
+    "postcss-tailwind-data-attr": "^1.0.7"
+  },
+  "scripts": {
+    "build": "TAILWIND_MODE=watch postcss tailwind.css -o ./public/styles.css -w --verbose",
+    "prod": "NODE_ENV=production postcss tailwind.css -o ./public/styles.css",
+    "serve": "cross-env concurrently \"TAILWIND_MODE=watch postcss tailwind.css -o ./public/styles.css -w \"  \"live-server ./public\""
   },
   "eslintConfig": {
     "parserOptions": {

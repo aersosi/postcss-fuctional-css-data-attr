@@ -45,6 +45,15 @@ build/Release
 node_modules/
 src/node_modules/
 jspm_packages/
+npm-debug.log
+yarn-error.log
+
+coverage/
+/.npmignore
+/.editorconfig
+/yarn.lock
+/package-lock.json
+
 
 # TypeScript v1 declaration files
 typings/
@@ -107,3 +116,4 @@ dist
 
 # TernJS port file
 .tern-port
+/functional-css-data-attr/package-lock.json
