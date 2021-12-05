@@ -5,7 +5,7 @@
   "main": "index.js",
   "keywords": [],
   "dependencies": {
-    "tailwind-data-attr": "file:tailwind-data-attr"
+    "postcss-tailwind-attr": "file:postcss-tailwind-attr"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
@@ -14,8 +14,7 @@
     "tailwindcss": "^2.2.4",
     "live-server": "^1.2.1",
     "cross-env": "^5.2.0",
-    "concurrently": "^4.1.0",
-    "postcss-tailwind-data-attr": "^1.0.7"
+    "concurrently": "^4.1.0"
   },
   "scripts": {
     "build": "TAILWIND_MODE=watch postcss tailwind.css -o ./public/styles.css -w --verbose",
@@ -24,5 +23,5 @@
   },
   "author": "Arthur Ersosi <a.ersosi@gmx.de>",
   "license": "MIT",
-  "repository": "https://github.com/aersosi/postcss-tailwind-css-data-attr"
+  "repository": "https://github.com/aersosi/postcss-tailwind-attr"
 }
