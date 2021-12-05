@@ -1,11 +1,11 @@
-# postcss-fuctional-css-data-attr
-Postcss plugin [fuctional-css-data-attr].
+# postcss-tailwind-css-data-attr
+Postcss plugin [tailwind-css-data-attr].
 
-[PostCSS] Plugin to convert functional css classes inside HTML data-attribute to working css file
+[PostCSS] Plugin to convert tailwind css classes inside HTML data-attribute to working css file
 
 
 [PostCSS]: https://github.com/postcss/postcss
-[fuctional-css-data-attr]: https://github.com/aersosi/postcss-fuctional-css-data-attr
+[tailwind-css-data-attr]: https://github.com/aersosi/postcss-tailwind-css-data-attr
 
 ---
 
@@ -68,7 +68,7 @@ And you get this:
 **Step 1:** Install plugin:
 
 ```sh
-npm install --save-dev postcss postcss-fuctional-css-data-attr
+npm install --save-dev postcss postcss-tailwind-css-data-attr
 ```
 
 **Step 2:** Check you project for existed PostCSS config: `postcss.config.js`
@@ -83,7 +83,7 @@ and set this plugin in settings.
 ```diff
 module.exports = {
   plugins: [
-+   require('postcss-fuctional-css-data-attr'),
++   require('postcss-tailwind-css-data-attr'),
     require('autoprefixer')
   ]
 }

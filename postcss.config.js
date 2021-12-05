@@ -1,7 +1,7 @@
 
 module.exports = (ctx) => ({
     plugins: {
-        'functional-css-data-attr': {},
+        'tailwind-data-attr': {},
         cssnano: {},
         tailwindcss: {},
         autoprefixer: {},

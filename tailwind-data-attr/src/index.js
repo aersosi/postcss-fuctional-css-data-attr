@@ -14,14 +14,14 @@ module.exports = (opts = {}) => {
     return selector.indexOf('.') === 0;
   }
 
-  let attr = "data-styleClass";
+  let attr = "data-tailwind";
 
   // todo: 1. find only in data-attribute and compile to data-*
   // todo: 2. return tailwind if it's in regular class
   // todo: 3. add custom whiteList as option
   // todo: 4. add custom data-attr as option
   return {
-    postcssPlugin: 'functional-css-data-attr',
+    postcssPlugin: 'tailwind-data-attr',
     Root(root) {
       root.walkRules(rule => {
         rule.selector = rule.selector

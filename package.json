@@ -1,16 +1,11 @@
 {
-  "name": "functional-css-data-attr",
+  "name": "tailwind-data-attr",
   "version": "0.0.0",
   "description": "",
   "main": "index.js",
-  "keywords": [
-    "postcss",
-    "css",
-    "postcss-plugin",
-    ""
-  ],
+  "keywords": [],
   "dependencies": {
-    "functional-css-data-attr": "file:functional-css-data-attr/src"
+    "tailwind-data-attr": "file:tailwind-data-attr"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.6",
@@ -27,8 +22,7 @@
     "prod": "NODE_ENV=production postcss tailwind.css -o ./public/styles.css",
     "serve": "cross-env concurrently \"TAILWIND_MODE=watch postcss tailwind.css -o ./public/styles.css -w \"  \"live-server ./public\""
   },
-  "keywords": [],
   "author": "Arthur Ersosi <a.ersosi@gmx.de>",
   "license": "MIT",
-  "repository": "https://github.com/aersosi/postcss-fuctional-css-data-attr"
+  "repository": "https://github.com/aersosi/postcss-tailwind-css-data-attr"
 }

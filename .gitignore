@@ -53,6 +53,7 @@ coverage/
 /.editorconfig
 /yarn.lock
 /package-lock.json
+/tailwind-data-attr/package-lock.json
 
 
 # TypeScript v1 declaration files
@@ -116,4 +117,3 @@ dist
 
 # TernJS port file
 .tern-port
-/functional-css-data-attr/package-lock.json
