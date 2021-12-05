@@ -1,7 +1,7 @@
 # postcss-fuctional-css-data-attr
 Postcss plugin [fuctional-css-data-attr].
 
-[PostCSS] Plugin to convert functional css classes in HTML data-attribute to working css file
+[PostCSS] Plugin to convert functional css classes inside HTML data-attribute to working css file
 
 
 [PostCSS]: https://github.com/postcss/postcss
