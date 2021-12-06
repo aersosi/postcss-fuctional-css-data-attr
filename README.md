@@ -1,11 +1,11 @@
-# postcss-tailwind-css-data-attr
-Postcss plugin [tailwind-css-data-attr].
+# postcss-tailwind-attr
+Postcss plugin [postcss-tailwind-attr].
 
 [PostCSS] Plugin to convert tailwind css classes inside HTML data-attribute to working css file
 
 
 [PostCSS]: https://github.com/postcss/postcss
-[tailwind-css-data-attr]: https://github.com/aersosi/postcss-tailwind-css-data-attr
+[postcss-tailwind-attr]: https://github.com/aersosi/postcss-tailwind-attr
 
 ---
 
